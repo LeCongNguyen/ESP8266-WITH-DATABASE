@@ -2,14 +2,14 @@
 #include <ESP8266WiFi.h>
 #include <WiFiClient.h>
 
-// const char* ssid     = "VNPT_HUYENTRANG 1";
-// const char* password = "07070707";
+const char* ssid     = "VNPT_HUYENTRANG 1";
+const char* password = "07070707";
 
-const char* ssid     = "VNPT_2.4G";
-const char* password = "nguyen12345";
+// const char* ssid     = "VNPT_2.4G";
+// const char* password = "nguyen12345";
 
-// const char* serverName = "http://lcn113.000webhostapp.com/esp_data.php";
-const char* serverName = "http://funixproject3.000webhostapp.com/esp_data.php";
+const char* serverName = "http://lcn113.000webhostapp.com/ESP8266 WITH DATABASE/esp_data.php";
+// const char* serverName = "http://funixproject3.000webhostapp.com/esp_data.php";
 String apiKeyValue = "kjsjkhjdhfd";
 String sensorName = "DS18B20";
 String sensorLocation = "BEDROOM";
@@ -41,8 +41,8 @@ void loop() {
 
     // Prepare your HTTP POST request data
     String httpRequestData = "api_key=" + apiKeyValue + "&sensor=" + sensorName
-    + "&location=" + sensorLocation + "&value1=" + "28 dC"
-    + "&value2=5678"+"";
+    + "&location=" + sensorLocation + "&value1=" + "28 oC"
+    + "&value2=" + "5678";
     Serial.print("httpRequestData: ");
     Serial.println(httpRequestData);
 
