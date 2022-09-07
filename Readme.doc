@@ -1,0 +1,15 @@
+Bước 1. Đăng nhập vào Server 000webhost.com 
+Tài khoản:
+    email: moingaymotlinhkien@gmail.com
+    pass: Lcn11031996
+
+Bước 2. Tạo database trên host, thêm code trong 
+file createTable.sql vào SQL để tạo bảng dữ liệu.
+
+Bước 3. Chỉnh sửa 2 file esp_data.php và index.php 
+cho phù hợp với database vừa tạo và thêm chúng vào
+thư mục public_html của host.
+
+
+Bước 4. Chỉnh sửa serverName trong ESP8266_with_DATABASE.ino
+rồi upload vào ESP8266.
